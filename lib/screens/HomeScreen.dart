@@ -16,10 +16,9 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       body: Container(
-        color: Colors.green,
         margin: EdgeInsets.symmetric(horizontal: 15),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Container(

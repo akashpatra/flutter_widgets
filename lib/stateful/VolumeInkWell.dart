@@ -17,6 +17,7 @@ class _VolumeInkWellState extends State<VolumeInkWell> {
         highlightColor: Colors.lightGreenAccent.withOpacity(0.5),
         child: Icon(
           Icons.add_circle,
+          color: Colors.deepPurpleAccent,
           size: 40,
         ),
         radius: 90,
@@ -34,11 +35,17 @@ class _VolumeInkWellState extends State<VolumeInkWell> {
     return Column(
       children: <Widget>[
         buildVolume(),
-        Text(
-          _volumeData.toString(),
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
+        Container(
+          margin: EdgeInsets.only(top: 60),
+          color: Colors.deepPurpleAccent,
+          padding: EdgeInsets.all(10),
+          child: Text(
+            _volumeData.toString(),
+            style: TextStyle(
+              fontSize: 40,
+              fontWeight: FontWeight.bold,
+              color: Colors.amber,
+            ),
           ),
         ),
       ],

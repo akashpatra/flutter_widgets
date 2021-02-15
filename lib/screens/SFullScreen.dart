@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/stateful/MySlider.dart';
 import 'package:widgets/stateful/VolumeInkWell.dart';
 
 class SFullScreen extends StatelessWidget {
@@ -7,7 +8,7 @@ class SFullScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'StateFul',
+          'StateFull',
           style: TextStyle(
             color: Colors.white,
           ),
@@ -17,7 +18,10 @@ class SFullScreen extends StatelessWidget {
         child: Container(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[VolumeInkWell(), Text('Hi')],
+            children: <Widget>[
+              VolumeInkWell(),
+              MySlider(),
+            ],
           ),
         ),
       ),
