@@ -101,7 +101,7 @@ class InvisibleScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Invisible',
+          'Invisible Widgets',
           style: TextStyle(
             color: Colors.white,
           ),

@@ -43,7 +43,7 @@ class SLessScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Stateless',
+          'Stateless Widgets',
           style: TextStyle(
             color: Colors.white,
           ),

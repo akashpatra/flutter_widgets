@@ -8,7 +8,7 @@ class SFullScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'StateFull',
+          'StateFull Widgets',
           style: TextStyle(
             color: Colors.white,
           ),

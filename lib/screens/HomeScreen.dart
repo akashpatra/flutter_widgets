@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/screens/CustomScreen.dart';
 import 'package:widgets/screens/InvisibleScreen.dart';
 import 'package:widgets/screens/SFullScreen.dart';
 import 'package:widgets/screens/SLessScreen.dart';
@@ -103,6 +104,30 @@ class HomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(15),
                 decoration: BoxDecoration(
                     color: Colors.amber,
+                    borderRadius: BorderRadius.circular(15)),
+              ),
+            ),
+            InkWell(
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) {
+                    return CustomScreen();
+                  },
+                ),
+              ),
+              child: Container(
+                width: 200,
+                alignment: Alignment.center,
+                margin: EdgeInsets.symmetric(vertical: 7),
+                child: Text('Custom',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.amber,
+                      fontSize: 20,
+                    )),
+                padding: const EdgeInsets.all(15),
+                decoration: BoxDecoration(
+                    color: Colors.deepPurpleAccent,
                     borderRadius: BorderRadius.circular(15)),
               ),
             ),
